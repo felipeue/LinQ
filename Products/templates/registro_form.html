@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinQ</title>
+</head>
+<body>
+<h1>Prueba practica LinQ</h1>
+
+        <form id="sku_form" method="post" action="/agregar_registro/">
+
+            {% csrf_token %}
+           <p> Rack: {{ registro_form.rack_contenedor }}</p><br>
+            <p>Productos: {{ registro_form.productos }}</p><br>
+            <input type="submit" name="submit" value="Agregar" />
+        </form>
+
+<a href="/">Volver</a>
+</body>
+</html>
